@@ -1,6 +1,4 @@
 ![header image](https://raw.github.com/MAqwerty/loopstudios-landing-page/master/Design.jpg)
-![header image](https://raw.github.com/MAqwerty/loopstudios-landing-page/master/mobile-design.jpg)
-
 
 # Getting Started with Create React App
 
