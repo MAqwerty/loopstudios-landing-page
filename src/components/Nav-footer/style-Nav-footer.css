@@ -1,0 +1,92 @@
+.FOOTER-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-Logo{
+    position: absolute;
+    top: 40px;
+    left: 65px;
+}
+
+.footer-PC-NAV{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.footer-PC-ul{
+    display: flex;
+}
+
+.Footer-PC-li{
+    margin-left: 25px;
+}
+
+.Footer-TEXT{
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.Footer-Media-SVG{
+    display: flex;
+    justify-content: space-evenly;
+    width: 12%;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.Footer-Media-a:hover{
+    border-bottom: 5px solid white ;
+}
+
+@media only screen and (max-width:1000px){
+    .FOOTER-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-Logo{
+        position: unset;  
+        margin-top: 25px; 
+    }
+    .footer-PC-NAV{
+        position: unset;
+    }
+    .footer-PC-ul{
+        display: flex;
+        margin-top: 25px; 
+    } 
+    .Footer-Media-SVG{
+        width: 25%;
+        position: unset;
+        margin-top: 25px; 
+    }
+    .Footer-TEXT{
+        position: unset;
+        margin: 25px; 
+    }
+}
+
+@media only screen and (max-width:550px){  
+    .footer-PC-ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    } 
+    .Footer-Media-SVG{
+        width: 50%;
+        position: unset;
+        margin-top: 25px; 
+    }
+    .Footer-PC-li{
+        margin: 0px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+}

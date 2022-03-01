@@ -1,0 +1,151 @@
+/* ..........................PC NAV.........................*/
+
+.PC-NAV{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin: 55px;
+    position: absolute;
+}
+
+.PC-ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 55px;
+}
+
+.PC-li{
+    margin-left: 25px ;
+    font-weight: bold;
+}
+
+.PC-NAVlink{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: underline 5px ;
+    text-underline-offset: 5px;
+}
+
+/* ...........................MOBILE NAV.................... */
+
+.Mobile-NAV{    
+    position: absolute;
+    width: 100%; 
+    display: none;
+}
+
+.BOX-ul{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    animation: .75s linear drop ;
+
+    display: none;
+}
+
+.Mobile-ul{
+    list-style: none;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 55px;
+    top: 150px;
+}
+
+.Mobile-NAVlink{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    cursor: pointer;
+    line-height: 2em;
+    font-size: 1.75em;
+}
+
+.Mobile-NAVlink:hover:active{
+    border-bottom: 5px solid white ;
+}
+
+.Mobile-Logo{
+    position: absolute;
+    left: 55px;
+    top: 55px; 
+}
+
+.BTNMenu{
+    position: absolute;
+    right: 55px;
+    top: 55px; 
+    cursor: pointer;
+
+}
+
+.BTNClose{
+    position: absolute;
+    right: 55px;
+    top: 60px; 
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1000px){
+    .PC-NAV{
+        display: none;      
+    }
+    .Mobile-NAV{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .BTNMenu{
+        right: 25px;
+    }
+    .Mobile-Logo{
+        left: 25px;
+    }
+    .BTNClose{
+        right: 25px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .BTNMenu{
+        right: 15px;
+    }
+    .Mobile-Logo{
+        left: 15px;
+    }
+    .BTNClose{
+        right: 15px;
+    }
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-250px); 
+    }
+    20% {
+        transform: translateY(0px); 
+    }
+    40% {
+        transform: translateY(-90px);  
+    }
+    60% {
+        transform: translateY(0px); 
+    }
+    85% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

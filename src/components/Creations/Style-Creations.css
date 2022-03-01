@@ -1,0 +1,45 @@
+.Grouping-Creations{
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.title{
+    position: absolute;
+    font-size: 2.75rem;
+    left: 0px;
+    bottom: 0px;
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+.MbileImgSrc{
+    display: none;
+}
+
+@media only screen and (max-width:1000px){
+    .imgSrc{
+        display: none;
+    }
+    .MbileImgSrc{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .title{
+        font-size: 1.75rem;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .title{
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+}
